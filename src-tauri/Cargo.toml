@@ -1,0 +1,53 @@
+[package]
+name = "oneos"
+version = "0.1.0"
+description = "OneOS - virtual desktop operating system platform"
+authors = ["OneOS contributors"]
+edition = "2021"
+rust-version = "1.80"
+license = "MIT"
+
+[lib]
+name = "oneos_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = [
+  "rt-multi-thread",
+  "macros",
+  "net",
+  "process",
+  "fs",
+  "time",
+  "sync",
+  "io-util",
+] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+thiserror = "2"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing-appender = "0.2"
+sysinfo = "0.33"
+tokio-tungstenite = "0.24"
+futures-util = "0.3"
+uuid = { version = "1", features = ["v4"] }
+rand = "0.8"
+sha2 = "0.10"
+
+[profile.dev]
+incremental = true
+
+[profile.release]
+# Thin LTO + a few codegen units keeps the linker's peak memory low enough to
+# build on an 8 GB host while still producing a small, optimised binary.
+codegen-units = 4
+lto = "thin"
+opt-level = "s"
+panic = "abort"
+strip = true

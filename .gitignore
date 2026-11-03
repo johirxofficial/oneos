@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+frontend/node_modules/
+
+# build output
+frontend/dist/
+src-tauri/target/
+src-tauri/gen/schemas/
+
+# runtime data: VM disks, ISOs, SQLite database, WebView2 profile, logs
+data/
+logs/
+
+# downloaded toolchain and QEMU runtime (fetched by scripts, never committed)
+resources/
+tools/
+
+# virtual machine media
+*.qcow2
+*.qcow2.*
+*.iso
+seed.iso
+
+# misc
+*.log
+*.pdb
+*.tmp
+tmp-*.js
+.DS_Store
+Thumbs.db
