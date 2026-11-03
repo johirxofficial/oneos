@@ -1,9 +1,10 @@
-{
+﻿{
   "name": "oneos",
   "private": true,
   "version": "0.1.0",
   "description": "OneOS - a complete Linux computer inside a Windows application",
   "license": "MIT",
+  "author": "Johir (https://github.com/johirxofficial)",
   "scripts": {
     "dev": "npm --prefix frontend run dev",
     "build": "npm --prefix frontend run build",

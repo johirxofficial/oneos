@@ -152,6 +152,17 @@ only enables it for the installation boot) and start the VM normally.
 * `reports/test-report.md` – what was actually executed and observed
 * `reports/dependency-report.md` – every third-party component and licence
 
+## Credits
+
+**OneOS was created by Johir — [@johirxofficial](https://github.com/johirxofficial).**
+Bug reports, ideas and pull requests are welcome.
+
+Built on the work of these projects: [QEMU](https://www.qemu.org/) (GPL-2.0),
+[noVNC](https://novnc.com/) (MPL-2.0), [Tauri](https://tauri.app/),
+[Rust](https://www.rust-lang.org/), [React](https://react.dev/),
+[Debian](https://www.debian.org/) and [XFCE](https://xfce.org/).
+Full list in `reports/dependency-report.md`.
+
 ## Licence
 
 Project code: MIT. QEMU is GPL-2.0 (shipped as a separate executable). noVNC is

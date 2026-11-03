@@ -2,7 +2,7 @@
 name = "oneos"
 version = "0.1.0"
 description = "OneOS - virtual desktop operating system platform"
-authors = ["OneOS contributors"]
+authors = ["Johir (@johirxofficial)", "OneOS contributors"]
 edition = "2021"
 rust-version = "1.80"
 license = "MIT"
