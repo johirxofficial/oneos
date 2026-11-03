@@ -1,0 +1,9 @@
+OneOS is MIT licensed (see LICENSE). Third-party components keep their own
+licences and are not covered by that licence:
+
+* QEMU is GPL-2.0 and runs as a separate executable. It is downloaded by
+  `scripts/install-qemu-portable.ps1` and is not part of this repository.
+* noVNC is MPL-2.0 and is consumed as an npm dependency (`@novnc/novnc`).
+* Debian and its packages are distributed under their own DFSG licences.
+* React, Tauri, Rust crates and the remaining npm packages keep the licences
+  listed in `reports/dependency-report.md`.
